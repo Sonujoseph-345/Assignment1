@@ -1,0 +1,214 @@
+/* Author:Sonu J */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.titlediv {
+    background-image: url(../images/academy-banner.jpg);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.titlediv h1 {
+    font-family: sans-serif;
+    font-size: 45px;
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+.logo img {
+    align-self: flex-end;
+}
+.heading {
+    text-align: right;
+    color: #1e2531;
+    font: weight 600px;
+}
+.php-lecture {
+    padding: 5%;
+    width: 100%;
+}
+.speciality-list {
+    background-color: #1e2531;
+    color: #68d7f2;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.speciality-list p {
+    font-size: 30px;
+    font-weight: 600;
+}
+.speciality-list p::after {
+    content: "}";
+    color: #fb2376;
+}
+.speciality-list p::before {
+    content: "{";
+    color: #fb2376;
+}
+.specialities {
+    display: flex;
+    position: relative;
+}
+.discription {
+    text-align: center;
+    padding: 0 9%;
+    font-size: 20px;
+    line-height: 30px;
+    color: #252525;
+    padding-bottom: 5%;
+}
+.page3 {
+    background-image: url(../images/modulebg.jpg);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16% 10%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.page3 p {
+    background-color: rgba(30, 37, 49, 0.5);
+    border-radius: 10px;
+    width: 22%;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+.toppadding {
+    padding-top: 3%;
+}
+.page4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg1 {
+    width: 50%;
+    background-image: url(../images/testsbg.jpg);
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg2 {
+    width: 50%;
+    background-image: url(../images/intrvwbg.jpg);
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.training {
+    width: 80%;
+    background-color: rgba(30, 37, 49, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 25% 0;
+    line-height: 20px;
+}
+.footer {
+    padding: 8%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    width: 100%;
+}
+.footer a {
+    width: 15%;
+    text-decoration: none;
+    text-align: center;
+}
+footer h1 {
+    font-size: large;
+}
+.detailed-address {
+    text-align: center;
+}
+.detailed-address h3 {
+    padding-bottom: 5%;
+}
+a > h3 {
+    color: #fc7405;
+    border: 2px solid #fc7405;
+    padding: 1% 2%;
+}
+@media screen and (max-width: 576px) {
+    .titlediv {
+        background-image: none;
+        background-color: #bbc2ca;
+    }
+    .specialities {
+        display: flex;
+        flex-wrap: wrap;
+        position: static;
+    }
+    .speciality-list {
+        position: static;
+        right: -29px;
+        width: 100%;
+    }
+    .speciality-list p {
+        font-size: 15px;
+    }
+
+    .php-lecture img {
+        width: 100%;
+    }
+    .php-lecture {
+        padding: 0;
+    }
+    .bg1 {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: fit-content;
+    }
+    .bg2 {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: fit-content;
+    }
+    .page4 {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .training {
+        margin: 3%;
+    }
+    .page3 p {
+        width: 45%;
+    }
+    .footer a {
+        width: 30%;
+    }
+    .footer {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+}
